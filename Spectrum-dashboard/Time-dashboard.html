@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Logs</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="containers">
+
+        <div class="sidebar">
+
+
+
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+
+            <div class="dashbaord">
+                <nav>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Manage Agents</a></li>
+                        <li class="active"> <a href="#">Time Logs</a></li>
+                        <li><a href="#">Reports</a></li>
+                    </ul>
+                </nav>
+
+                <div class="account">
+                    <hr>
+                    <a href="#">My Account</a>
+                    <a href="#">Logout</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <main>
+
+            <header>
+
+                <div class="search-box">
+
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="user-info">
+
+                    <svg width="35" height="35" viewBox="0 0 41 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.9321 8.97692C10.877 8.97692 8.31037 11.2741 7.97298 14.3106L6.567 26.9644H26.5531L25.1471 14.3106C24.8098 11.2741 22.2432 8.97692 19.188 8.97692H13.9321ZM2.57039 26.965C1.46659 26.965 0.571777 27.8598 0.571777 28.9637V30.9623C0.571777 32.0661 1.46659 32.9609 2.57039 32.9609H30.551C31.6548 32.9609 32.5496 32.0661 32.5496 30.9623V28.9637C32.5496 27.8598 31.6548 26.965 30.551 26.965H2.57039Z"
+                            fill="#FFD21B" />
+                        <rect x="12.5626" y="34.9568" width="7.99445" height="7.99445" rx="2.99792" fill="#E11E24" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28.5516 23.6337C34.4386 23.6337 39.2109 18.8614 39.2109 12.9744C39.2109 7.08747 34.4386 2.31516 28.5516 2.31516C22.6647 2.31516 17.8923 7.08747 17.8923 12.9744C17.8923 18.8614 22.6647 23.6337 28.5516 23.6337Z"
+                            fill="#E11E24" />
+                        <path
+                            d="M28.4342 18.475C27.5068 18.475 26.7127 18.2565 26.0518 17.8195C25.4016 17.3718 24.906 16.7323 24.5649 15.9008C24.2238 15.0694 24.0532 14.0621 24.0532 12.8789C24.0532 11.5998 24.2451 10.5179 24.6288 9.63318C25.0126 8.7378 25.5668 8.05561 26.2917 7.5866C27.0165 7.11759 27.8852 6.88309 28.8979 6.88309C29.2923 6.88309 29.6866 6.93639 30.081 7.04298C30.4861 7.13891 30.8645 7.28281 31.2163 7.47468C31.5787 7.65589 31.8984 7.87973 32.1756 8.14621L31.5041 9.68115C31.1097 9.31873 30.6886 9.05225 30.2409 8.8817C29.7932 8.7005 29.3349 8.60989 28.8659 8.60989C28.4075 8.60989 27.9972 8.69517 27.6347 8.86571C27.283 9.0256 26.9845 9.27077 26.7394 9.6012C26.4942 9.92098 26.3077 10.326 26.1797 10.8164C26.0625 11.296 26.0039 11.8556 26.0039 12.4952V13.6944H25.812C25.8973 13.1507 26.0732 12.6871 26.3396 12.3033C26.6168 11.9089 26.9685 11.6105 27.3949 11.4079C27.8213 11.1948 28.2956 11.0882 28.8179 11.0882C29.4681 11.0882 30.0437 11.2427 30.5447 11.5518C31.0457 11.861 31.4401 12.2873 31.7279 12.831C32.0157 13.3746 32.1596 13.9982 32.1596 14.7017C32.1596 15.4265 31.9997 16.0767 31.6799 16.6523C31.3708 17.2173 30.9338 17.6649 30.3688 17.9954C29.8146 18.3152 29.1697 18.475 28.4342 18.475ZM28.3223 16.8442C28.706 16.8442 29.0418 16.7589 29.3296 16.5884C29.628 16.4178 29.8572 16.178 30.0171 15.8689C30.177 15.5491 30.2569 15.1867 30.2569 14.7816C30.2569 14.3659 30.177 14.0035 30.0171 13.6944C29.8572 13.3852 29.628 13.1454 29.3296 12.9749C29.0418 12.7937 28.706 12.7031 28.3223 12.7031C27.9385 12.7031 27.6028 12.7937 27.315 12.9749C27.0272 13.1454 26.798 13.3852 26.6274 13.6944C26.4675 14.0035 26.3876 14.3659 26.3876 14.7816C26.3876 15.1867 26.4675 15.5491 26.6274 15.8689C26.798 16.178 27.0272 16.4178 27.315 16.5884C27.6028 16.7589 27.9385 16.8442 28.3223 16.8442Z"
+                            fill="white" />
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28.5503 24.9686C35.1731 24.9686 40.5419 19.5997 40.5419 12.9769C40.5419 6.3541 35.1731 0.985245 28.5503 0.985245C21.9274 0.985245 16.5586 6.3541 16.5586 12.9769C16.5586 19.5997 21.9274 24.9686 28.5503 24.9686Z"
+                            fill="#E11E24" />
+                    </svg>
+
+                    <img src="./img/user.png" alt="User Image">
+
+                    <h6>Moni Roy <br> <span> Admin</span></h6>
+                </div>
+
+            </header>
+
+            <section class="agents-section">
+
+                <div class="agent-div">
+                    <h2 class="fw-bold">Time Logs</h2>
+
+                </div>
+
+                <div class="container mb-2">
+                    <div class="filter-section">
+                       
+                        <img class="filter-icon" src="./img/filter.png"
+                            alt="Filter Icon">
+
+                        <div class="vr"></div>
+                   
+                        <div style="font-weight: 600;">Filter By</div>
+
+                        <div class="vr"></div>
+
+                        <div class="filter-item">
+                            <select>
+                                <option value="date">Date</option>
+                            </select>
+                        </div>
+
+                        <div class="vr"></div>
+
+                        <div class="filter-item">
+                            <select>
+                                <option value="date"> Start Date</option>
+                            </select>
+                        </div>
+
+                        <div class="vr"></div>
+
+                        <div class="filter-item">
+                            <select>
+                                <option value="date"> End Date</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <div class="buttons-section">
+                        <button class="search-button ms-4">Search</button>
+                        <button class="correction-request-button">Correction <br>Request</button>
+                    </div>
+                </div>
+
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Break Start</th>
+                            <th>Break End</th>
+                            <th>Working Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>22 May</td>
+                            <td>Christine Brooks</td>
+                            <td>10:30 AM</td>
+                            <td>07:30 PM</td>
+                            <td>2:30 PM</td>
+                            <td>3:30 PM</td>
+                            <td>9:00 hr</td>
+                            <td>
+                                <button type="button" class="btn complete-btn"> Completed</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22 May</td>
+                            <td>Rosie Pearson</td>
+                            <td>10:30 AM</td>
+                            <td>07:30 PM</td>
+                            <td>2:30 PM</td>
+                            <td>3:30 PM</td>
+                            <td>9:00 hr</td>
+                            <td>
+                                <button type="button" class="btn process-btn"> Processing</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>22 May</td>
+                            <td>Darrell Caldwell</td>
+                            <td>10:30 AM</td>
+                            <td>07:30 PM</td>
+                            <td>2:30 PM</td>
+                            <td>3:30 PM</td>
+                            <td>9:00 hr</td>
+                            <td>
+                                <button type="button" class="btn reject-btn">Rejected </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>22 May</td>
+                            <td>Gilbert Johnston</td>
+                            <td>10:30 AM</td>
+                            <td>07:30 PM</td>
+                            <td>2:30 PM</td>
+                            <td>3:30 PM</td>
+                            <td>9:00 hr</td>
+                            <td>
+                                <button type="button" class="btn complete-btn"> Completed</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>22 May</td>
+                            <td>Alan Cain</td>
+                            <td>10:30 AM</td>
+                            <td>07:30 PM</td>
+                            <td>2:30 PM</td>
+                            <td>3:30 PM</td>
+                            <td>9:00 hr</td>
+                            <td>
+                                <button type="button" class="btn process-btn"> Processing</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>22 May</td>
+                            <td>Alfred Murray</td>
+                            <td>10:30 AM</td>
+                            <td>07:30 PM</td>
+                            <td>2:30 PM</td>
+                            <td>3:30 PM</td>
+                            <td>9:00 hr</td>
+                            <td>
+                                <button type="button" class="btn complete-btn"> Completed</button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

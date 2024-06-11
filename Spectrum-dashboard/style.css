@@ -1,0 +1,168 @@
+
+*{
+    font-family: Poppins;
+    font-weight: 600;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.leftside {
+    height: 650px;
+    width: 35%;
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+
+.right {
+    height: 650px;
+    width: 62%;
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+
+.image-div,
+.form-div {
+    margin: 60px;
+
+}
+
+.image-div img {
+    width: 100%;
+}
+
+
+.login-btn {
+    background-color: #FFCC01;
+    border-radius: 30px;
+    height: 50px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.form-div h1 {
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.form-div h6{
+  color: grey;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.form-div h6 span{
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+}
+
+form {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #000;
+    border-radius: 30px !important;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+}
+
+.show-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url('./img/eye.png') no-repeat center center;
+    background-size: contain;
+}
+
+.login-btn {
+    width: 100%;
+    /* padding: 15px 20px; */
+    border: none;
+    border-radius: 25px;
+    background-color: #ffcc00;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover {
+    background-color: #e6b800;
+}
+
+.forgot-password {
+    /* margin-top: 20px; */
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.otp-input{
+    width: 64.66px;
+    height: 61px;
+    top: 556px;
+    left: 152px;
+    gap: 0px;
+    border-radius: 25px;
+    border: 1.1px  solid #000000
+}
+
+.otp{
+    display: flex;
+    gap: 15px;
+}
+
+.resendotp{
+    color: #000;
+    font-size: 13px;
+    text-align: right;
+    float: right;
+    margin-bottom: 10px;
+}
